@@ -1,0 +1,18 @@
+/* Minimal document base. The page surface is painted by `.jf-root` in
+   src/marketing/jfrog/jfrog.css; here we only zero the document margins and set
+   JFrog's deep-navy base so there is no flash before the React tree mounts.
+   English / LTR is set on <html> in app/layout.tsx. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #0a1428;
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100svh;
+}
