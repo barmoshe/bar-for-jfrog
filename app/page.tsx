@@ -12,13 +12,14 @@ const body = Open_Sans({
   display: "swap",
 });
 
-// Ad-hoc, personalized application page for Bar Moshe's GenAI & Competitive
-// Intelligence Engineer application to JFrog, built in JFrog's own visual
-// language (deep navy, the green earned, Open Sans, pill CTAs, supply-chain
-// flow). A private, shareable link sent with the application, so noindex.
-const ogTitle = "Bar Moshe × JFrog — GenAI & Competitive Intelligence Engineer";
+// Ad-hoc, personalized application page for Bar Moshe's JFrog applications
+// (GenAI & Competitive Intelligence Engineer, and Software Engineer), built in
+// JFrog's own visual language (deep navy, the green earned, Open Sans, pill
+// CTAs, supply-chain flow). A private, shareable link sent with applications,
+// so noindex.
+const ogTitle = "Bar Moshe × JFrog — AI Builder & Full-Stack Engineer";
 const ogDescription =
-  "An AI builder who ships MCP servers, Claude skills, agentic pipelines, and RAG. Open source on npm, code featured on Temporal's Code Exchange.";
+  "An AI builder who ships production features through Claude Code, builds MCP servers and Claude skills, and owns full-stack + DevOps end to end. Open source on npm, code featured on Temporal's Code Exchange.";
 
 export const metadata: Metadata = {
   title: ogTitle,

@@ -6,18 +6,18 @@ import HeroBackdrop from './HeroBackdrop';
 import './jfrog.css';
 
 /**
- * JfrogApp — an ad-hoc, personalized application page for Bar Moshe's
- * "GenAI & Competitive Intelligence Engineer" application to JFrog. Built in
- * JFrog's verified visual language (read live off jfrog.com): the deep navy
- * canvas (#122342), the JFrog green (#40BE46) used sparingly, Open Sans, green
- * pill CTAs, rounded cards, a liquid/supply-chain flow motif. English / LTR.
- * Self-contained, every visual built fresh. Motion respects prefers-reduced-motion
- * and the page is legible with no JS.
+ * JfrogApp — an ad-hoc, personalized application page for Bar Moshe's JFrog
+ * applications (GenAI & Competitive Intelligence Engineer, and Software
+ * Engineer). Built in JFrog's verified visual language (read live off
+ * jfrog.com): the deep navy canvas (#122342), the JFrog green (#40BE46) used
+ * sparingly, Open Sans, green pill CTAs, rounded cards, a liquid/supply-chain
+ * flow motif. English / LTR. Self-contained, every visual built fresh. Motion
+ * respects prefers-reduced-motion and the page is legible with no JS.
  */
 
 const EMAIL =
   'mailto:1barmoshe1@gmail.com?subject=' +
-  encodeURIComponent('Application: GenAI & Competitive Intelligence Engineer — Bar Moshe');
+  encodeURIComponent('Application: Bar Moshe × JFrog');
 const CV = '/Bar_Moshe_CV_JFrog.pdf';
 const WHATSAPP = 'https://wa.me/972546561465';
 const LINKEDIN = 'https://www.linkedin.com/in/barmoshe/';
@@ -27,19 +27,19 @@ type Fit = { k: string; body: string };
 
 const FIT: Fit[] = [
   {
-    k: 'MCP servers and Skills',
-    body: 'I build MCP servers and Claude / Codex skills. MDP is on npm with its own MCP server, so other tools and agents connect to it.',
+    k: 'AI-native engineering',
+    body: 'I ship production features through Claude Code, and build the MCP servers and Claude / Codex skills those tools connect to. MDP is on npm with its own MCP server.',
   },
   {
-    k: 'Knowledge automation and RAG',
-    body: 'Pipelines that collect sources, ground them over a vector index, summarise with an LLM, and deliver on a schedule.',
+    k: 'Backend systems and APIs',
+    body: 'Full-stack and API work in production at Joomsy, plus a Go worker in a cross-language Temporal service featured on Temporal’s Code Exchange.',
   },
   {
     k: 'Concept to production',
-    body: 'I ship ideas to running software. Several are open source on npm; a cross-language Temporal service is on Temporal’s Code Exchange.',
+    body: 'I ship ideas to running software. Several are open source on npm, with full ownership from idea to deploy.',
   },
   {
-    k: 'Cloud-native and DevSecOps',
+    k: 'Cloud-native and DevOps',
     body: 'Docker, Kubernetes, Terraform, and CI/CD, plus publishing versioned packages to registries.',
   },
 ];
@@ -184,16 +184,16 @@ export default function JfrogApp() {
           <div className="jf-hero__inner">
             <p className="jf-eyebrow" data-reveal>
               <span className="jf-eyebrow__dot" aria-hidden="true" />
-              For JFrog · GenAI &amp; Competitive Intelligence Engineer
+              For JFrog · Software Engineer &amp; GenAI / Competitive Intelligence Engineer
             </p>
             <h1 className="jf-title" data-reveal>
               AI Builder &amp; <span className="jf-hl">Full-Stack Engineer</span>
             </h1>
             <p className="jf-lede" data-reveal>
-              I build AI and agentic products end to end: LLM apps, MCP servers,
-              Claude skills, and RAG, plus the full-stack and DevOps around them.
-              Open source on npm, with a service featured on Temporal&apos;s Code
-              Exchange.
+              I ship production features through Claude Code, build the MCP
+              servers and Claude skills those tools connect to, and own the
+              full-stack and DevOps around them. Open source on npm, with a
+              service featured on Temporal&apos;s Code Exchange.
             </p>
             <div className="jf-hero__cta" data-reveal>
               <a className="jf-btn jf-btn--primary" href={EMAIL}>
@@ -326,8 +326,9 @@ export default function JfrogApp() {
       <footer className="jf-footer">
         <div className="jf-footer__inner">
           <p className="jf-footer__tag">
-            An application page Bar Moshe built in JFrog&apos;s visual language for the
-            GenAI &amp; Competitive Intelligence Engineer role. Not affiliated with JFrog.
+            An application page Bar Moshe built in JFrog&apos;s visual language, for the
+            Software Engineer and GenAI &amp; Competitive Intelligence Engineer roles.
+            Not affiliated with JFrog.
           </p>
           <span className="jf-footer__meta">Tel Aviv · 2026</span>
         </div>
