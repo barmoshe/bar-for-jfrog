@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 // Root layout. English / LTR document shell; page-level metadata (fonts, copy)
@@ -14,7 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="ltr">
-      <body>{children}</body>
+      <body>
+    <Script
+      src="https://bar-for-companies.vercel.app/track.js"
+      data-bar-for-id="jfrog"
+      strategy="afterInteractive"
+    />
+{children}</body>
     </html>
   );
 }
